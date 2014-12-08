@@ -12,7 +12,7 @@ pyglet.gl.glClearColor(1, 1, 1, 1)
 space = 0
 
 def circle(x, y, radius, g, b):
-    iterations = 8
+    iterations = int(2*math.pi*radius)
     s = math.sin(2*math.pi / iterations)
     c = math.cos(2*math.pi / iterations)
     dx, dy = radius, 0
